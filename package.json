@@ -1,6 +1,6 @@
 {
   "name": "simplified-build",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Simplified build tool",
   "main": "index.js",
   "scripts": {
@@ -15,11 +15,10 @@
   "dependencies": {
     "gulp-notify": "~2.x",
     "gulp-sass": "~2.x",
-    "gulp-less": "2.x",
+    "gulp-less": "3.0.x",
     "gulp-util": "~2.x",
     "gulp-watch": "~4.3.x",
     "gulp-plumber": "1.0.x",
-	"gulp-less":"3.0.x",
     "del": "~2.2.x",
     "run-sequence": "~1.1.x"
   }
