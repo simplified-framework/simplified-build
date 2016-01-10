@@ -20,6 +20,7 @@
     "gulp-watch": "~4.3.x",
     "gulp-plumber": "1.0.x",
     "del": "~2.2.x",
-    "run-sequence": "~1.1.x"
+    "run-sequence": "~1.1.x",
+	"fs-utils":"~0.7.x"
   }
 }

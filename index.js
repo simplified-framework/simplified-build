@@ -4,9 +4,10 @@ var plumber = require('gulp-plumber');
 var notify = require('gulp-notify');
 var del = require('del');
 var runSequence = require('run-sequence');
+var fs = require('fs-utils');
 
 module.exports = function(fn) {
-    var basepath = "app/resources/";
+    var basepath = "app/resources/assets/";
     var tasks = [];
     var count = 0;
     var mix = new function() {
@@ -32,9 +33,13 @@ module.exports = function(fn) {
 
         this.copy = function(src, dst) {
             var key = "copy_" + count;
+            var path = basepath + src;
+            if (fs.isDir(path)) {
+                path += "/*"
+            }
 
             gulp.task(key, function(){
-                gulp.src(basepath + src)
+                gulp.src(path)
                     .pipe(gulp.dest(dst));
             });
             tasks.push(key);
