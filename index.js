@@ -19,7 +19,7 @@ module.exports = function(fn) {
                     .pipe(plumber({errorHandler:function(error){
                         notify({title:'Simplified Build',icon:__dirname + '/icons/error.png'}).write(error.message);
                     }}))
-                    .pipe(sass({includePath:basepath + 'vendor',outputStyle:'compressed'})) // compresseed / expanded
+                    .pipe(sass({includePath:basepath + 'vendor',outputStyle:'expanded'})) // compresseed / expanded
                     .pipe(gulp.dest('public/css'))
                     .pipe(
                         notify({title:'Simplified Build',message:'Build finished',icon:__dirname + '/icons/finished.png',onLast:true})
@@ -35,7 +35,7 @@ module.exports = function(fn) {
             var key = "copy_" + count;
             var path = basepath + src;
             if (fs.isDir(path)) {
-                path += "/*"
+                path += "/**"
             }
 
             gulp.task(key, function(){
@@ -52,7 +52,7 @@ module.exports = function(fn) {
     fn(mix);
 
     gulp.task('clean', function() {
-        return del(['public/css','public/js', 'public/fonts']);
+        return del(['public/css','public/scripts', 'public/fonts']);
     });
 
     gulp.task('build', function(){

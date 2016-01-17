@@ -1,29 +1,51 @@
 {
-  "name": "simplified-build",
-  "version": "1.0.6",
-  "description": "The Simplified build tool",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "build",
-    "simplified"
+  "_args": [
+    [
+      "simplified-build@~1.0.x",
+      "C:\\xampp\\htdocs"
+    ]
   ],
-  "author": "Andreas Bratfisch",
-  "license": "ISC",
+  "_from": "simplified-build@>=1.0.0 <1.1.0",
+  "_id": "simplified-build@1.0.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/simplified-build",
+  "_nodeVersion": "5.3.0",
+  "_npmUser": {
+    "email": "duskman72@gmail.com",
+    "name": "duskman72"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "simplified-build",
+    "raw": "simplified-build@~1.0.x",
+    "rawSpec": "~1.0.x",
+    "scope": null,
+    "spec": ">=1.0.0 <1.1.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_shasum": "bbfc9f5942dcc328fde665509f1661d288549a7b",
+  "_shrinkwrap": null,
+  "_spec": "simplified-build@~1.0.x",
+  "_where": "C:\\xampp\\htdocs",
+  "author": {
+    "name": "Andreas Bratfisch"
+  },
   "dependencies": {
-    "gulp-plumber": "1.0.x",
-    "fs-utils": "~0.7.x",
+    "babel-preset-es2015": "^6.1.0",
+    "babel-preset-react": "^6.1.18",
     "babelify": "^7.2.0",
     "browser-sync": "^2.7.10",
     "browserify": "^11.2.0",
     "del": "^1.2.0",
+    "fs-utils": "~0.7.x",
     "glob": "^5.0.14",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-babel": "^6.1.0",
-    "babel-preset-es2015": "^6.1.0",
-    "babel-preset-react": "^6.1.18",
     "gulp-batch": "^1.0.5",
     "gulp-coffee": "^2.3.1",
     "gulp-concat": "^2.6.0",
@@ -34,12 +56,13 @@
     "gulp-notify": "^2.2.0",
     "gulp-phpspec": "^0.5.3",
     "gulp-phpunit": "0.11.x",
+    "gulp-plumber": "1.0.x",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^5.1.0",
     "gulp-rev-replace": "^0.4.2",
     "gulp-sass": "^2.0.3",
-    "gulp-sourcemaps": "^1.5.2",
     "gulp-shell": "^0.5.0",
+    "gulp-sourcemaps": "^1.5.2",
     "gulp-uglify": "^1.4.2",
     "gulp-util": "^3.0.6",
     "gulp-watch": "^4.2.4",
@@ -56,5 +79,32 @@
     "vinyl-paths": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.2.3"
-  }
+  },
+  "description": "The Simplified build tool",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "bbfc9f5942dcc328fde665509f1661d288549a7b",
+    "tarball": "http://registry.npmjs.org/simplified-build/-/simplified-build-1.0.6.tgz"
+  },
+  "gitHead": "3733c69b838ff17c8330e307757b0a2026a04391",
+  "keywords": [
+    "build",
+    "simplified"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "maintainers": [
+    {
+      "name": "duskman72",
+      "email": "duskman72@gmail.com"
+    }
+  ],
+  "name": "simplified-build",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.6"
 }
